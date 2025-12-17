@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Protfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/603e01a1fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id= "header"> 
+    <div class="container">
+        <nav>
+            <img src="Image/logo .png" class="logo">
+            <ul id="sidemenu">
+                <li><a href ="#header">Accueil</a></li>
+                <li><a href ="#à-propos">À propos</a></li>
+                <li><a href ="#Services">Services</a></li>
+                <li><a href ="#portfolio">Portfolio</a></li>
+                <li><a href ="#contact">Contact</a></li>
+                <li><a href ="#" onclick="language()">English</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developpement de logiciels</p>
+            <h1>Bonjour,<br>Je m'appelle <span>Jeremie</span> Fortin.</h1>
+        </div>
+</div>
+
+<!--------------about section---------------->
+
+<div id="à-propos">
+    <div class="container">
+        <div class="row">
+            <div class="à-propos-col-1">
+                <img src="Image/MA2025_JEREMI_6988.jpeg"> 
+            </div>
+            <div class="à-propos-col-2">
+                <h1 class="subtitle">À propos de moi</h1>
+                    <p class="about-me">Je suis un jeune développeur passionné par l’univers de l’informatique et ses innombrables possibilités.
+                    Curieux de nature, j’aime explorer les nouvelles technologies, relever des défis techniques et approfondir mes compétences jour après jour.<br><br>
+                    Sur le plan humain, je suis quelqu’un de social, jovial et transparent. 
+                    J’accorde une grande importance à la collaboration, à l’écoute et à la bonne humeur dans un environnement de travail.<br><br>
+                    Apprendre et me perfectionner font partie intégrante de mon quotidien. 
+                    Chaque projet est pour moi une opportunité de grandir, qu’il soit ambitieux ou modeste. 
+                    Il n’y a pas de tâche trop grande ou trop petite. Ce qui compte, c’est de l’aborder avec passion, rigueur et engagement.
+
+                    </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Aptitude</p></p>
+                    <p class="tab-links"onclick="opentab('educations')">Éducations</p></p>
+                    <p class="tab-links"onclick="opentab('experiences')">Experiences</p></p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Developeur Logiciel </span><br>JavaScript, HTML, CSS, NodeJS, Python, PHP</li>
+                        <li><span>Gestion de données </span><br>MYSQL, DataBase, LAMP, Java</li>
+                        <li><span>Autre</span><br>C++, Linux OS, Soutien Informatique</li>
+                    </ul>
+                </div><div class="tab-content"id="educations">
+                    <ul>
+                        <li><span>Universiter d'Ottawa - Coding for Veteran (2024-2025)</span><br>Certificat en Developpement de logiciels </li>
+                        <li><span>Python Institue (2025)</span><br>PCAP - Certified Associate Python Programmer<br></li>
+                        <li><span>Armé Canadienne (2021 - 2024)</span><br> Forces Armée Canadienne</li>
+                    </ul>
+                </div><div class="tab-content"id="experiences">
+                    <ul>
+                        <li><span>Veuillez consulter mon répertoire github. </span><br></li>
+                        <div class="social-icon">
+                            <a href="https://github.com/J-Fortin"> Mon github<i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-------------Services section---------------->
+
+<div id="Services">
+    <div class="container">
+        <h1 class="subtitle">Mes Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Developpeur Front-end.</h2>
+                 <p>Création de sites web modernes et responsives adaptés à vos besoins.</p>
+                 <a href="#contact">En savoir plus.</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Developpeur Back-End.</h2>
+                 <p>Création de code source.</p>
+                 <a href="#contact">En savoir plus.</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Developeur de Jeux video.</h2>
+                 <p>Création de Jeux video.</p>
+                 <a href="#contact">En savoir plus.</a>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<!-------------Portfolio section---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Mon Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Image/python-programming-2048x2048-16102.jpg">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p> Accès a mes projet fait en Python.</p>
+                    <a href="https://github.com/J-Fortin?tab=repositories&q=&type=&language=python&sort"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image/C++.jpg">
+                <div class="layer">
+                    <h3>C++</h3>
+                    <p> Accès a mes projet fait en C++.</p>
+                    <a href="https://github.com/J-Fortin?tab=repositories"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="Image/HTML.jpg"><div class="layer">
+                    <h3>HTML/Javascript</h3>
+                    <p> Accès a mes projet fait en HTML et JavaScript.</p>
+                    <a href="https://github.com/J-Fortin?tab=repositories&q=&type=&language=html&sort="><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/J-Fortin"class= "btn">En savoir plus.</a>
+    </div>
+</div>
+
+<!-------------Contact section---------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class= "subtitle">Contactez moi</h1>
+                <p><i class="fa-solid fa-at"></i> jeremifortinn@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (581)-777-4756</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/jeremie.fortin.377339"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/jeremie-fortin-54b741370/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/J-Fortin"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Image/Jeremie Fortin CV.pdf" download class="btn btn2">Télécharger CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-right">
+                     <input type="hidden" name="access_key" value="7ff56982-1816-4313-b2c2-0d01fe32297a">
+                    <input type="text" name="Name" placeholder="Votre nom." class="contact-input" required>
+                    <input type="email" name="Email" placeholder="Votre email." class="contact-input" required>
+                    <textarea name="Message" rows="6" placeholder="Votre message."class="contact-input" ></textarea>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jeremie Fortin. Passionner par son travail.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    function language() {
+        window.location.href = "indexEn.html"; // Redirect to the English version
+    }
+</script>
+</body>
+</html>
